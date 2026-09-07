@@ -1,12 +1,12 @@
 <?php
-$hdr = "<h1>Googleplex</h1>"; //variable for heading and paragraph text
+$heading = "Googleplex"; //variable for heading and paragraph text
 ?>
 
 <?php
-$strt = "1600 Amphitheatre Parkway"; //variable for street
-$cty = "Mountain View"; //variable for city
-$ste = "CA"; //variable for state
-$cntry = "United States"; //variable for country
+$street = "1600 Amphitheatre Parkway"; //variable for street
+$city = "Mountain View"; //variable for city
+$state = "CA"; //variable for state
+$country = "United States"; //variable for country
 ?>
 
 <!DOCTYPE html> <!-- Hector Ramirez -->
@@ -22,18 +22,21 @@ $cntry = "United States"; //variable for country
 <body>
 
     <header>
-        <?php print "$hdr"; ?> <!-- displays header -->
+        <h1><?php print $heading; ?></h1> <!-- displays header -->
     </header>
 
-    <p>The Googleplex is the corporate headquarters
+    <p>The <?php print $heading; ?> is the corporate headquarters
         complex of Google and its parent company
-        Alphabet Inc.<br> It is located at:
+        Alphabet Inc. It is located at: <br>
 
         <br>
-        <?php print "$strt"; ?> <!-- displays street -->
+        <?php print $street; ?> <!-- displays street -->
         <br>
 
-        <?php print "$cty, $ste, $cntry"; ?> <!-- //displays city, state, and country -->
+        <?php print $city;
+        $state;
+        $country;
+        ?> <!-- displays city, state, and country -->
     </p>
 </body>
 
